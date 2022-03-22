@@ -1,0 +1,19 @@
+ async updateChat(dtoList: DeleteChatDto[]): Promise<any> {
+    const success = true;
+    try {
+      for (const x of dtoList) {
+        const chats: any[] = await this.findChats(x);
+        if (chats.length === 0) {
+          return false;
+        }
+        for (const y of chats) {
+          if (y.deletedBy) await this.setIsDeleted(y);
+          else await this.setDeletedBy(y, x);
+        }
+      }
+    } catch (error) {
+      return !success;
+    }
+    return success;
+  }
+  asy
