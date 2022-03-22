@@ -1,0 +1,41 @@
+{
+  "senderUserId": "a50eb869-e8fc-4023-a042-453520b59c3d",
+  "receiverUserId": "ed729d57-583b-4709-b2a5-490ff3fb4a2a",
+  "name": "string",
+  "avatar": "string",
+  "message": "scenar-message-test-2",
+  "topic": "string",
+  "countryName": "string",
+  "countryId": "string",
+  "timestamp": 0,
+  "deviceType": "ANDROID",
+  "isRead": true
+}
+
+{
+  "senderUserId": "ed729d57-583b-4709-b2a5-490ff3fb4a2a",
+  "receiverUserId": "a50eb869-e8fc-4023-a042-453520b59c3d",
+  "name": "string",
+  "avatar": "string",
+  "message": "message 1 ",
+  "topic": "string",
+  "countryName": "string",
+  "countryId": "string",
+  "timestamp": 0,
+  "deviceType": "ANDROID",
+  "isRead": true
+}
+
+{
+  "senderUserId": "ed729d57-583b-4709-b2a5-490ff3fb4a2a",
+  "receiverUserId": "a50eb869-e8fc-4023-a042-453520b59c3d",
+  "name": "string",
+  "avatar": "string",
+  "message": "message -2 ",
+  "topic": "string",
+  "countryName": "string",
+  "countryId": "string",
+  "timestamp": 0,
+  "deviceType": "ANDROID",
+  "isRead": true
+}
