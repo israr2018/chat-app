@@ -1,0 +1,25 @@
+ async setIsDeleted(x: DeleteChatDto): Promise<any> {
+    const condition = this.chatCondition(x);
+    return await this.chatModel.updateMany(
+      condition,
+      {
+        isDeleted: true,
+      },
+      {
+        multi: true,
+      },
+    );
+  }
+   async setDeletedBy(x: DeleteChatDto): Promise<any> {
+    const condition = this.chatCondition(x);
+    return await this.chatModel.updateMany(
+      condition,
+
+      {
+        deletedBy: x.loggedinUserId,
+      },
+      {
+        multi: true,
+      },
+    );
+  }
